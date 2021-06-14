@@ -31,7 +31,7 @@ int displayArray(int A[],int size)
 struct Pair min_maxArray(int A[],int size)
 {
     struct Pair minmax;
-    int i=0;
+    // int i=0;
     //1st set the 1st two element as min, max
     if (A[0]>A[1])
     {
@@ -46,7 +46,7 @@ struct Pair min_maxArray(int A[],int size)
 
     //with respect to these two values, set the min, max foe the whole array
 
-    for (i = 2; i < size; i++)
+    for (int i = 2; i < size; i++)
     {
         if (A[i]>minmax.max)
         {

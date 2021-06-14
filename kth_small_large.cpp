@@ -35,7 +35,7 @@ void kth_smallest(int A[],int size,int kth_num)
         int kth_max_data=0;
         int min_element=0;
         int max_element=0;
-        int i=0;
+        // int i=0;
         arrayInput(A,size);
         //1st sort the array
         cout<<"The entered elements are ";
@@ -54,7 +54,7 @@ void kth_smallest(int A[],int size,int kth_num)
             min_element=A[0];
         }
 
-        for ( i = 2; i < size; i++)
+        for ( int i = 2; i < size; i++)
         {
             if (A[i]>max_element)
             {
