@@ -65,6 +65,7 @@ void kth_smallest(int A[],int size,int kth_num)
                 min_element=A[i];
             }
         }
+        ///////////////////////////////////////////////////////
         
         kth_min_data=A[kth_num-1];  //to find kth min 
         kth_max_data=A[size-kth_num];  //to find kth max 
