@@ -42,6 +42,7 @@ void kth_smallest(int A[],int size,int kth_num)
         displayArray(A,size);
         sort(A,A+size);
 
+        //find the greatest and smallest element in the array
         if(A[0]>A[1])
         {
             max_element=A[0];
