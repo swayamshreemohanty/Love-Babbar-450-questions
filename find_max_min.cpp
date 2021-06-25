@@ -4,6 +4,7 @@ using namespace std;
 
 struct Pair
 {
+    //INT_MAX, INT_MIN used to initialize the variable with the max and min number of integer.
     int min=INT_MAX;
     int max=INT_MIN;
 };
