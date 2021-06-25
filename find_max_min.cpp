@@ -1,10 +1,11 @@
 #include"iostream"
+#include"climits"
 using namespace std;
 
 struct Pair
 {
-    int min;
-    int max;
+    int min=INT_MAX;
+    int max=INT_MIN;
 };
 
 
@@ -31,18 +32,18 @@ int displayArray(int A[],int size)
 struct Pair min_maxArray(int A[],int size)
 {
     struct Pair minmax;
-    // int i=0;
-    //1st set the 1st two element as min, max
-    if (A[0]>A[1])
-    {
-       minmax.max=A[0];
-       minmax.min=A[1];
-    }
-    else 
-    {
-        minmax.max=A[1];
-        minmax.min=A[0];
-    }
+
+    // //1st set the 1st two element as min, max
+    // if (A[0]>A[1])
+    // {
+    //    minmax.max=A[0];
+    //    minmax.min=A[1];
+    // }
+    // else 
+    // {
+    //     minmax.max=A[1];
+    //     minmax.min=A[0];
+    // }
 
     //with respect to these two values, set the min, max foe the whole array
 
@@ -51,7 +52,6 @@ struct Pair min_maxArray(int A[],int size)
         if (A[i]>minmax.max)
         {
             minmax.max=A[i];
-            // cout<<minmax.max<<endl;
         }
         else if (A[i] < minmax.min)
         {
